@@ -78,11 +78,16 @@
 }
 .filter-list .label-text {
   flex: 1;
+  font-size: 14px;
+}
+.filter-list label span:nth-child(2) {
+  font-size: 14px;
 }
 
 .filter-head {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .filter-head h4 {
   flex: 1;
@@ -120,9 +125,11 @@ input[type="checkbox"]:checked + label {
 /* Checkbox ends */
 
 .product-card {
-  background-color: #fff;
-  padding: 10px;
+  margin-bottom: 10px;
+  padding: 16px;
+  background: #fff;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  border-radius: 5px;
 }
 
 .product-image {
@@ -225,7 +232,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .product-specs-1 {
-  flex: 1;
+  flex: 0.7;
   margin-right: 10px;
 }
 
@@ -235,8 +242,16 @@ input[type="checkbox"]:checked + label {
 }
 
 .product-specs-1 .product-spec {
+  display: flex;
+  align-items: center;
 }
 
+.product-specs-1 .product-spec i {
+  font-size: 24px;
+  padding: 10px;
+  /* margin-right: 10px; */
+  width: 50px;
+}
 .product-specs-1 .product-spec-title {
   font-size: 13px;
   font-weight: 700;
@@ -249,9 +264,21 @@ input[type="checkbox"]:checked + label {
   line-height: 20px;
 }
 
+.product-specs-2 .product-spec {
+  display: flex;
+  padding: 3px 5px 3px 22px;
+  align-items: center;
+}
+
+.product-specs-2 .product-spec .fa-check {
+  color: #00a200;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
 .product-specs-2 .product-spec-title {
   position: relative;
-  padding: 3px 5px 3px 22px;
+
   display: block;
   font-size: 13px;
   line-height: 15px;
@@ -287,7 +314,7 @@ input[type="checkbox"]:checked + label {
 
 .product-extra-info .info-1 {
   position: relative;
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 8px;
   margin-bottom: 8px;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
@@ -302,7 +329,7 @@ input[type="checkbox"]:checked + label {
 
 .product-extra-info .info-2 {
   position: relative;
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 8px;
   margin-bottom: 8px;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
@@ -312,6 +339,10 @@ input[type="checkbox"]:checked + label {
   line-height: 16px;
   background: #e2ffd0;
   border-color: #e2ffd0;
+}
+
+.product-extra-info .info-2 .fa-check {
+  /* font-size: 16px; */
 }
 
 .product-card-lower {
@@ -356,27 +387,32 @@ input[type="checkbox"]:checked + label {
   transition: color 0.2s;
 }
 
-.product-price-section {
+.product-price-section-upper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.product-price-section .product-price-upper-text {
+.product-price-section-upper .product-price-upper-text {
   font-size: 13px;
   line-height: 15px;
   color: #9c9c9c;
 }
 
-.product-price-section .product-price-text {
+.product-price-section-upper .product-price-text {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
 
-.product-price-section .product-price {
+.product-price-section-upper .product-price {
   margin-right: 10px;
 }
-.product-price-section .product-view-button {
+
+.product-price-section-upper .product-view-button-section {
+  margin-right: 10px;
+}
+.product-price-section-upper .product-view-button {
   display: inline-block;
   padding: 10px 16px;
   font-weight: 700;
@@ -416,7 +452,7 @@ input[type="checkbox"]:checked + label {
   font-style: 16px;
 }
 
-.product-price-section .product-view-text {
+.product-bottom-text {
   color: #00a200;
   font-weight: 700;
   margin-top: 8px;
@@ -424,4 +460,42 @@ input[type="checkbox"]:checked + label {
   font-size: 12px;
   text-align: center;
   line-height: 16px;
+}
+
+.product-message-section .product-message-button {
+  width: 32px;
+  height: 32px;
+  display: block;
+  background: #d8d8d8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-message-section .product-message-button i {
+  /* font-size: 32px; */
+  /* color: #d8d8d8; */
+}
+
+.rotate-it {
+  transform: rotate(180deg);
+}
+.icon {
+  font-size: 20px;
+  margin-right: 14px;
+  color: #0a578c;
+  transition: 0.5s all;
+}
+.filter-heading {
+  display: flex;
+  align-items: center;
+}
+.filter-heading h4 {
+  color: #0a578c;
+  font-size: 19px;
+}
+
+.filter-head span {
+  color: #0a578c;
 }
