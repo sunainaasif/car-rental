@@ -79,6 +79,14 @@
 .filter-list .label-text {
   flex: 1;
 }
+
+.filter-head {
+  display: flex;
+  justify-content: space-between;
+}
+.filter-head h4 {
+  flex: 1;
+}
 /* Checkbox */
 
 input[type="checkbox"] {
@@ -89,8 +97,8 @@ input[type="checkbox"] + label::before {
   border: 0.1em solid #000;
   border-radius: 2px;
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   padding: 0px 2px;
   margin-right: 10px;
   /* vertical-align: text-top; */
