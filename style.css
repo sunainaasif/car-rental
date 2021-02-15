@@ -1,0 +1,101 @@
+.header {
+  position: relative;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%);
+  z-index: 12;
+}
+.main-content {
+  background: #f1f3f4;
+  padding-top: 30px;
+}
+.search-form {
+  position: relative;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #fad130;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  z-index: 101;
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-it {
+  display: flex;
+}
+.date-input {
+  border: none;
+  width: 60%;
+  margin: 8px 0;
+  border-right: 1px solid gray;
+  padding: 10px 10px 10px 10px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-right-color: #e8e8e8;
+  border-radius: 3px 0 0 3px;
+  font-size: 16px;
+  line-height: 20px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.time-input {
+  border: none;
+  width: 40%;
+  margin: 8px 0;
+  height: 40px;
+  border: 1px solid #fff;
+  font-size: 16px;
+  line-height: 20px;
+  outline: 0;
+  cursor: pointer;
+}
+.driver-info {
+  line-height: 16px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.search-btn {
+  padding: 9px;
+  width: 100%;
+  background-color: #00a200;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+}
+/* Checkbox */
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label::before {
+  content: "\2713";
+  border: 0.1em solid #000;
+  border-radius: 2px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 0px 2px;
+  margin-right: 10px;
+  vertical-align: text-top;
+  color: transparent;
+  transition: 0.2s;
+  line-height: 17px;
+  margin-bottom: 9px;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: transparent;
+  border-color: #000;
+  color: #000;
+  line-height: 17px;
+  font-size: 12px;
+}
+input[type="checkbox"]:checked + label {
+  /* color: #93c144; */
+}
+/* Checkbox ends */

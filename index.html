@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car - Results </title>
+    <link rel="stylesheet" href="style.css">   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.css">
+<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+    <header class="text-center header">
+        <h1>Header</h1>
+    </header>
+    <div class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="search-form">
+                        <form action="">
+                            <div class="title">
+                                <div class="flex-space-between">
+                                    <p>Pick-up/Drop-off </p>
+                                    <a href="#">Change</a>
+                                </div>
+                                <div>
+                                    <h6>Paris Charles de Gaulle Airport (CDG)</h6>
+                                </div>
+                            </div>
+                            <div>
+                                <span>Pick-up date</span>
+                                <div class="flex-it">    
+                                    <input type="text" id="pickup-date" class="date-input" placeholder="Enter Date">
+                                    <select name="time" id="" class="time-input">
+                                        <option value=""> 1:00am </option>
+                                        <option value=""> 2:00am </option>
+                                        <option value=""> 3:00am </option>
+                                        <option value=""> 4:00am </option>
+                                        <option value=""> 5:00am </option>
+                                        <option value=""> 6:00am </option>
+                                        <option value=""> 7:00am </option>
+                                        <option value=""> 8:00am </option>
+                                        <option value=""> 9:00am </option>
+                                        <option value=""> 10:00am </option>
+                                        <option value=""> 11:00am </option>
+                                        <option value=""> 12:00am </option>
+                                        <option value=""> 1:00pm </option>
+                                        <option value=""> 2:00pm </option>
+                                        <option value=""> 3:00pm </option>
+                                        <option value=""> 4:00pm </option>
+                                        <option value=""> 5:00pm </option>
+                                        <option value=""> 6:00pm </option>
+                                        <option value=""> 7:00pm </option>
+                                        <option value=""> 8:00pm </option>
+                                        <option value=""> 9:00pm </option>
+                                        <option value=""> 10:00pm </option>
+                                        <option value=""> 11:00pm </option>
+                                        <option value=""> 12:00pm </option>
+
+
+                                    </select>
+                                </div>
+                                <div>
+                                    <span>Drop-off date</span>
+                                    <div class="flex-it">
+                                        <input type="text" id="dropoff-date" class="date-input" placeholder="Enter Date">
+                                        <select name="time" id="" class="time-input">
+                                            <option value=""> 1:00am </option>
+                                            <option value=""> 2:00am </option>
+                                            <option value=""> 3:00am </option>
+                                            <option value=""> 4:00am </option>
+                                            <option value=""> 5:00am </option>
+                                            <option value=""> 6:00am </option>
+                                            <option value=""> 7:00am </option>
+                                            <option value=""> 8:00am </option>
+                                            <option value=""> 9:00am </option>
+                                            <option value=""> 10:00am </option>
+                                            <option value=""> 11:00am </option>
+                                            <option value=""> 12:00am </option>
+                                            <option value=""> 1:00pm </option>
+                                            <option value=""> 2:00pm </option>
+                                            <option value=""> 3:00pm </option>
+                                            <option value=""> 4:00pm </option>
+                                            <option value=""> 5:00pm </option>
+                                            <option value=""> 6:00pm </option>
+                                            <option value=""> 7:00pm </option>
+                                            <option value=""> 8:00pm </option>
+                                            <option value=""> 9:00pm </option>
+                                            <option value=""> 10:00pm </option>
+                                            <option value=""> 11:00pm </option>
+                                            <option value=""> 12:00pm </option>
+    
+                                        </select>
+                                    </div>
+                                    <p class="driver-info">Driver's country of residence is <u>Pakistan</u> and age is <u>30-65</u> </p>
+                                    <a class="search-btn" href="" type="submit">Search Now</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="filter-section">
+                        <div class="filter-head">
+
+                        </div>
+                        <div class="filter-list">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1">Disinfected</label>
+                            
+                        
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-9">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var dateToday = new Date(); 
+        $( function() {
+          $( "#pickup-date" ).datepicker({
+               numberOfMonths:2,
+               minDate: dateToday
+             });
+          $( "#dropoff-date" ).datepicker({
+               numberOfMonths:2,
+               minDate: dateToday
+             });
+        } );
+        </script>
+        
+</body>
+</html>
