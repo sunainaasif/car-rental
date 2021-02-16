@@ -78,11 +78,16 @@
 }
 .filter-list .label-text {
   flex: 1;
+  font-size: 14px;
+}
+.filter-list label span:nth-child(2) {
+  font-size: 14px;
 }
 
 .filter-head {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .filter-head h4 {
   flex: 1;
@@ -118,3 +123,24 @@ input[type="checkbox"]:checked + label {
   /* color: #93c144; */
 }
 /* Checkbox ends */
+.rotate-it {
+  transform: rotate(180deg);
+}
+.icon {
+  font-size: 20px;
+  margin-right: 14px;
+  color: #0a578c;
+  transition: 0.5s all;
+}
+.filter-heading {
+  display: flex;
+  align-items: center;
+}
+.filter-heading h4 {
+  color: #0a578c;
+  font-size: 19px;
+}
+
+.filter-head span {
+  color: #0a578c;
+}
