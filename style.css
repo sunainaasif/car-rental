@@ -499,3 +499,90 @@ input[type="checkbox"]:checked + label {
 .filter-head span {
   color: #0a578c;
 }
+
+.filter-product-card {
+  position: relative;
+  width: 136px;
+  padding: 8px;
+  margin-left: 6px;
+  margin-bottom: 8px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  border-radius: 3px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  float: left;
+  height: 100%;
+  border-bottom: 4px solid #9c9c9c;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.filter-product-card .car-type {
+  margin-top: 2px;
+  color: #757575;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+.filter-product-card .car-details {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-product-card .car-details-text {
+  position: relative;
+
+  margin: 0 5px 5px 0;
+
+  color: #757575;
+
+  font-size: 13px;
+  line-height: 16px;
+
+  word-wrap: break-word;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.filter-product-card .car-details-text i {
+  margin-right: 5px;
+}
+
+.filter-product-card .car-image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 120px;
+  height: 60px;
+}
+
+.filter-product-card .car-image::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 60px;
+  background: url(/images/car-groups-v2.svg) no-repeat 0 0;
+  background-size: 960px 60px;
+  background-position: -120px 0;
+}
+
+.filter-product-card .car-price {
+  padding: 0 4px;
+  color: #000;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter-product-card .car-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* display: none; */
+  display: block;
+  width: 26px;
+  height: 26px;
+  color: #0a578c;
+}
