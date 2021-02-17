@@ -75,6 +75,10 @@
   text-align: center;
   border-radius: 6px;
 }
+
+.search-btn:hover {
+  text-decoration: none;
+}
 .filter-list {
   /* display: flex; */
   align-items: center;
@@ -510,7 +514,7 @@ input[type="checkbox"]:checked + label {
 
 .filter-product-card {
   position: relative;
-  width: 98%;
+  width: 90%;
   padding: 8px;
   margin-left: 6px;
   margin-bottom: 0px;
@@ -566,6 +570,7 @@ input[type="checkbox"]:checked + label {
   vertical-align: middle;
   width: 120px;
   height: 60px;
+  align-self: center;
 }
 
 .filter-product-card .car-image::before {
@@ -626,12 +631,14 @@ button.slick-prev.slick-arrow {
   position: absolute;
   left: -6px;
   z-index: 999999;
+  outline: none;
 }
 button.slick-next.slick-arrow {
   top: 60px;
   position: absolute;
   right: -6px;
   z-index: 999999;
+  outline: none;
 }
 
 /* Search bar  */
@@ -714,7 +721,49 @@ a.search-bar-btn i {
     flex-direction: column;
   }
   .product-card-lower {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .product-specs-1 {
+    margin-bottom: 20px;
+  }
+  .product-specs-2 {
+    margin-bottom: 20px;
+  }
+  .product-extra-info {
+    display: flex;
+  }
+
+  .product-extra-info .info-1 {
+    margin-right: 10px;
+  }
+
+  .product-supplier-rating {
+    /* margin-bottom: 20px; */
+    align-self: flex-end;
+  }
+
+  .product-price-section {
+    display: flex;
+  }
+
+  .product-price-section-upper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .product-bottom-text {
+    display: none;
+  }
+
+  .product-view-button-section {
+    flex: 1;
+  }
+  .product-price-section-upper .product-view-button {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 576px) {
