@@ -636,7 +636,7 @@ button.slick-prev.slick-arrow {
 button.slick-next.slick-arrow {
   top: 60px;
   position: absolute;
-  right: -6px;
+  right: 10px;
   z-index: 999999;
   outline: none;
 }
