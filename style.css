@@ -775,7 +775,22 @@ a.search-bar-btn i {
     padding: 10px 20px;
   }
 }
-/* ---------------- */
+
+/* --------New Search Bar Css-------- */
+.main-headings h1 {
+  margin-bottom: 16px;
+  color: #000;
+  font-size: 33px;
+  line-height: 41px;
+  font-weight: 400;
+  text-align: center;
+}
+.main-headings-captions {
+  color: #000;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
 .search-form-wrapper {
   margin: 20px auto 0;
   max-width: 760px;
@@ -817,13 +832,14 @@ select.time-input {
 .date-time-wrapper div:first-child {
   margin-right: 25px;
 }
-.main-form-search-btn {
-  width: auto;
-}
 .search-btn {
   background-color: #000;
 }
 .main-form-search-btn {
+  background: #fad130;
+  font-size: 18px;
+  margin-left: 70px;
+  width: auto;
   padding: 9px 40px;
   background: #fad130;
 }
@@ -832,7 +848,6 @@ select.time-input {
 .tooltip1 {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
 }
 
 .tooltip1 .tooltiptext {
@@ -848,6 +863,7 @@ select.time-input {
   bottom: 148%;
   left: 50%;
   margin-left: -106px;
+  font-size: 12px;
 }
 
 .tooltip1 .tooltiptext::after {
@@ -864,8 +880,21 @@ select.time-input {
 .tooltip1:hover .tooltiptext {
   visibility: visible;
 }
+.search-form p,
+.search-form h6,
+.search-form span {
+  color: #000;
+}
+@media only screen and (max-width: 767px) {
+  .main-form-search-btn {
+    width: 120px;
+    padding: 9px 20px;
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .flex-space-between.date-time-wrapper {
     flex-direction: column;
   }
 }
+/* --------New Search Bar Css-------- */
